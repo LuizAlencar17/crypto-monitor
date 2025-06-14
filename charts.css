@@ -1,0 +1,45 @@
+/* charts.css - styles for additional charts and metrics */
+
+.chart-section {
+  margin: 2.5em 0 0 0;
+  background: rgba(36,38,41,0.92);
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #0003;
+  padding: 1.5em 1em 2em 1em;
+}
+.chart-section h2 {
+  color: #8ab4f8;
+  font-size: 1.3em;
+  margin-bottom: 1em;
+  text-align: left;
+  letter-spacing: 0.5px;
+}
+.chart-section canvas {
+  background: #181a1b;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #00ffa344;
+  margin-bottom: 1em;
+}
+
+.metrics-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #181a1b;
+  color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 12px #0004;
+  margin-top: 2em;
+}
+.metrics-table th, .metrics-table td {
+  padding: 0.7em 0.3em;
+  text-align: center;
+}
+.metrics-table th {
+  background: #23272a;
+  color: #00ffa3;
+  font-weight: 600;
+}
+.metrics-table tr:nth-child(even) {
+  background: #23272a44;
+}

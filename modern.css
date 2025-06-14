@@ -1,0 +1,100 @@
+/* modern.css - visually beautiful, modern theme for crypto project */
+
+body {
+    background: linear-gradient(135deg, #23272a 0%, #1a1d1f 100%);
+    color: #e0e0e0;
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    margin: 0;
+}
+
+nav {
+    background: rgba(36, 38, 41, 0.98);
+    box-shadow: 0 2px 12px 0 #0004;
+    padding: 1.2em 0;
+    text-align: center;
+    border-bottom: 1px solid #2c2f33;
+}
+nav a {
+    color: #34a58e;
+    margin: 0 1.5em;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: color 0.2s;
+}
+nav a:hover {
+    color: #00ffa3;
+}
+
+.crypto-container {
+    max-width: 750px;
+    margin: 3em auto;
+    background: rgba(36, 38, 41, 0.98);
+    padding: 2.5em 2em 2em 2em;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 #0006;
+    border: 1px solid #2c2f33;
+}
+.crypto-container h1 {
+    font-size: 2.2em;
+    font-weight: 700;
+    margin-bottom: 1.2em;
+    color: #00ffa3;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.crypto-container label {
+    display: block;
+    margin: 1.2em 0 0.3em 0;
+    font-weight: 500;
+    color: #8ab4f8;
+}
+.crypto-container select, .crypto-container input[type="number"] {
+    width: 100%;
+    padding: 0.7em;
+    border-radius: 7px;
+    border: 1px solid #34363b;
+    background: #23272a;
+    color: #e0e0e0;
+    font-size: 1em;
+    margin-bottom: 0.5em;
+    outline: none;
+    transition: border 0.2s;
+}
+.crypto-container select:focus, .crypto-container input[type="number"]:focus {
+    border: 1.5px solid #00ffa3;
+}
+.crypto-container button[type="submit"] {
+    background: linear-gradient(90deg, #34a58e 0%, #00ffa3 100%);
+    color: #23272a;
+    font-weight: 700;
+    border: none;
+    border-radius: 7px;
+    padding: 0.9em 2.2em;
+    font-size: 1.1em;
+    margin-top: 1.2em;
+    cursor: pointer;
+    box-shadow: 0 2px 8px 0 #00ffa355;
+    transition: background 0.2s, color 0.2s;
+}
+.crypto-container button[type="submit"]:hover {
+    background: linear-gradient(90deg, #00ffa3 0%, #34a58e 100%);
+    color: #181a1b;
+}
+.crypto-container canvas {
+    background: #181a1b;
+    border-radius: 12px;
+    margin-top: 2em;
+    box-shadow: 0 2px 16px 0 #00ffa344;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .crypto-container { max-width: 98vw; padding: 1.2em 0.5em; }
+}
+@media (max-width: 600px) {
+    .crypto-container h1 { font-size: 1.3em; }
+    .crypto-container { padding: 0.7em 0.2em; }
+    nav { font-size: 0.95em; }
+}
