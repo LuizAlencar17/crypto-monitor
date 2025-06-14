@@ -23,15 +23,15 @@ This project is a modern, visually appealing static website for exploring and co
 ### 2. **URL Access (if hosted):**
 
 * If you deploy this project to a web server or a static hosting service (like GitHub Pages, Netlify, or Vercel), you can access it via:
-    * `http://<your-domain-or-localhost>/index.html` (main page 🏠)
+    * `https://luizalencar17.github.io/crypto-monitor` (main page 🏠)
 
 ---
 
 ## Example 💡
 
-If running locally on Windows, you can right-click `index.html` and choose "Open with" your browser. Or, if hosted at `https://yourname.github.io/static-website-01/`, visit:
+If running locally on Windows, you can right-click `index.html` and choose "Open with" your browser. Or, if hosted at `https://luizalencar17.github.io/crypto-monitor`, visit:
 
-* `https://yourname.github.io/static-website-01/index.html`
+* `https://luizalencar17.github.io/crypto-monitor`
 
 ---
 

@@ -52,6 +52,18 @@
         <div id="crypto-metrics"></div>
     </div>
     <script>
+        // Color palette for each crypto (must be defined before use)
+        const coinColors = {
+            bitcoin: '#f7931a',
+            ethereum: '#3c3c3d',
+            dogecoin: '#c2a633',
+            litecoin: '#b4b4b4',
+            solana: '#00ffa3'
+        };
+        let chart;
+        let ctx;
+        let drawdownChart;
+        let volatilityChart;
         /**
          * Shows a modal popup with an API error message.
          * @param {string} message - The error message to display.
@@ -185,7 +197,8 @@
                     borderColor: coinColors[coin] || undefined,
                     backgroundColor: (chartType === 'bar') ? (coinColors[coin] + '88') : (fillArea ? (coinColors[coin] + '33') : 'transparent'),
                     fill: chartType === 'line' ? fillArea : false,
-                    tension: 0.2
+                    tension: 0.2,
+                    pointRadius: 0 // Remove points
                 };
             });
             if (chart) chart.destroy();
@@ -220,7 +233,8 @@
                     borderColor: coinColors[coin] || undefined,
                     backgroundColor: (coinColors[coin] + '33'),
                     fill: false,
-                    tension: 0.2
+                    tension: 0.2,
+                    pointRadius: 0 // Remove points
                 };
             });
             if (drawdownChart) drawdownChart.destroy();
@@ -249,7 +263,8 @@
                     backgroundColor: (coinColors[coin] + '33'),
                     fill: false,
                     spanGaps: true,
-                    tension: 0.2
+                    tension: 0.2,
+                    pointRadius: 0 // Remove points
                 };
             });
             if (volatilityChart) volatilityChart.destroy();
@@ -270,6 +285,7 @@
         });
         // Initial load
         window.addEventListener('DOMContentLoaded', () => {
+            ctx = document.getElementById('priceChart').getContext('2d');
             document.getElementById('crypto-form').dispatchEvent(new Event('submit'));
         });
     </script>
